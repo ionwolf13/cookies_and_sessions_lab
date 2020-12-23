@@ -1,0 +1,8 @@
+<h1> Here Are all the Items</h1>\n    <p> There are no items </p>\n" to include "apples"
+<%if @cart == nil%>
+    <p> There are no items </p>
+<%elsif %>
+    <%= @cart.each do |item| %>
+        <%= item %>
+        <%end%>
+<%end%>
